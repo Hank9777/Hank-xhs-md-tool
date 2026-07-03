@@ -22,71 +22,98 @@
 
 ## 本地部署
 
-1. 克隆仓库。
+### 前置准备
+
+在开始之前，请确保你的电脑已安装以下工具：
+
+1. **Node.js 18 或更高版本**
+   - 下载地址：https://nodejs.org/
+   - 建议下载 LTS（长期支持）版本
+   - 安装后在命令行输入 `node -v` 验证，能看到版本号即成功
+
+2. **Git（可选）**
+   - 下载地址：https://git-scm.com/
+   - 如果不想用 Git，也可以直接下载项目压缩包
+
+### 详细步骤
+
+#### 步骤 1：获取项目代码
+
+**方式 A：使用 Git（推荐）**
+
+打开命令行（Windows 按 `Win + R` 输入 `cmd`，Mac 打开终端），输入：
 
 ```bash
-git clone https://github.com/your-name/xhs-md-layout-tool.git
-cd xhs-md-layout-tool
+git clone https://github.com/Hank9777/Hank-xhs-md-tool.git
+cd hanks-xhs-md-tool
 ```
 
-2. 安装依赖。
+**方式 B：直接下载**
+
+如果你没有安装 Git，可以：
+1. 访问项目页面
+2. 点击绿色的 `Code` 按钮
+3. 选择 `Download ZIP`
+4. 解压到任意文件夹
+5. 在命令行里进入该文件夹
+
+#### 步骤 2：安装依赖
+
+在项目文件夹里，输入以下命令：
 
 ```bash
 npm install
+```
+
+这一步会下载项目需要的所有依赖包，可能需要几分钟，请耐心等待。
+
+安装完成后，继续安装浏览器内核（用于导出图片）：
+
+```bash
 npx playwright install chromium
 ```
 
-3. 启动服务。
+#### 步骤 3：启动服务
+
+输入以下命令启动本地服务器：
 
 ```bash
 npm run dev
 ```
 
-Windows 用户也可以双击：
+**Windows 用户快捷方式**：也可以直接双击项目文件夹里的 `run-dev.bat` 文件，不需要打开命令行。
+
+看到类似这样的提示就说明启动成功了：
 
 ```text
-run-dev.bat
+Server running at http://localhost:4321
 ```
 
-4. 打开浏览器。
+#### 步骤 4：打开浏览器使用
+
+在浏览器地址栏输入：
 
 ```text
 http://localhost:4321
 ```
 
-首次打开后，可以点击“选择本地 MD 文件”导入自己的 Markdown。项目也内置了一个示例文件：
+现在你可以：
+- 点击”选择本地 MD 文件”导入你自己的 Markdown 文件
+- 或者先试试项目内置的示例文件：`examples/drafts/sample-note.md`
 
-```text
-examples/drafts/sample-note.md
-```
+### 部署常见问题
 
-## 可选配置
+**Q：命令行显示 `command not found: node`？**  
+A：说明 Node.js 没有安装或没有添加到环境变量，请重新安装 Node.js。
 
-项目支持 `.env` 本地配置。复制示例文件：
-
+**Q：npm install 报错？**  
+A：尝试切换 npm 镜像源（国内用户推荐）：
 ```bash
-cp .env.example .env
+npm config set registry https://registry.npmmirror.com
 ```
 
-Windows PowerShell 可以使用：
-
-```powershell
-Copy-Item .env.example .env
-```
-
-可配置项：
-
-```env
-PORT=4321
-XHS_DRAFT_DIR=./examples/drafts
-XHS_OUTPUT_DIR=./exports
-```
-
-说明：
-
-- `PORT`：本地网页端口。
-- `XHS_DRAFT_DIR`：草稿目录，仅用于“刷新文档”和旧版草稿 API；也可以直接在网页里选择任意本地 `.md` 文件。
-- `XHS_OUTPUT_DIR`：服务端默认 PNG 输出目录。现代浏览器会优先弹出文件夹选择器。
+**Q：端口 4321 被占用？**  
+A：参考下方”可选配置”章节修改端口。
 
 ## Markdown 写法
 
