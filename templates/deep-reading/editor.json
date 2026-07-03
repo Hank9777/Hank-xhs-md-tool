@@ -1,0 +1,131 @@
+{
+  "groups": [
+    {
+      "name": "颜色",
+      "controls": [
+        { "label": "纸张底色", "type": "color", "target": "cssVar", "name": "--xhs-paper", "default": "#fbfaf6" },
+        { "label": "正文颜色", "type": "color", "target": "cssVar", "name": "--xhs-text", "default": "#2a2824" },
+        { "label": "主标题颜色", "type": "color", "target": "cssVar", "name": "--xhs-ink", "default": "#151412" },
+        { "label": "金色强调", "type": "color", "target": "cssVar", "name": "--xhs-gold", "default": "#c88b05" },
+        { "label": "栏目标签色", "type": "color", "target": "cssVar", "name": "--xhs-gold-deep", "default": "#a46d00" },
+        { "label": "边框线色", "type": "color", "target": "cssVar", "name": "--xhs-line", "default": "#d8d4cb" },
+        { "label": "金句底色", "type": "color", "target": "cssVar", "name": "--xhs-quote-background", "default": "#f7f2e8" }
+      ]
+    },
+    {
+      "name": "整体布局",
+      "controls": [
+        { "label": "正文区左距", "type": "number", "target": "cssVar", "name": "--xhs-content-left", "unit": "px", "min": 40, "max": 120, "step": 2, "default": 76 },
+        { "label": "正文区顶部", "type": "number", "target": "cssVar", "name": "--xhs-content-top", "unit": "px", "min": 20, "max": 140, "step": 2, "default": 26 },
+        { "label": "正文区宽度", "type": "number", "target": "cssVar", "name": "--xhs-content-width", "unit": "px", "min": 620, "max": 800, "step": 2, "default": 748 },
+        { "label": "正文区域高度", "type": "number", "target": "cssVar", "name": "--xhs-content-height", "unit": "px", "min": 900, "max": 1120, "step": 2, "default": 1070, "syncConfigPath": "content.maxHeight" },
+        { "label": "边框左距", "type": "number", "target": "cssVar", "name": "--xhs-border-left", "unit": "px", "min": 10, "max": 60, "step": 1, "default": 26 },
+        { "label": "边框顶部", "type": "number", "target": "cssVar", "name": "--xhs-border-top", "unit": "px", "min": 10, "max": 60, "step": 1, "default": 26 },
+        { "label": "边框宽度", "type": "number", "target": "cssVar", "name": "--xhs-border-width", "unit": "px", "min": 780, "max": 880, "step": 2, "default": 848 },
+        { "label": "边框高度", "type": "number", "target": "cssVar", "name": "--xhs-border-height", "unit": "px", "min": 1080, "max": 1170, "step": 2, "default": 1148 },
+        { "label": "页脚位置", "type": "number", "target": "cssVar", "name": "--xhs-footer-top", "unit": "px", "min": 1000, "max": 1130, "step": 2, "default": 1096 },
+        { "label": "页脚高度", "type": "number", "target": "cssVar", "name": "--xhs-footer-height", "unit": "px", "min": 40, "max": 110, "step": 2, "default": 78 },
+        { "label": "页脚内部间距", "type": "number", "target": "cssVar", "name": "--xhs-footer-gap", "unit": "px", "min": 8, "max": 42, "step": 1, "default": 20 },
+        { "label": "页脚底部留白", "type": "number", "target": "cssVar", "name": "--xhs-footer-padding-bottom", "unit": "px", "min": 0, "max": 60, "step": 2, "default": 30 },
+        { "label": "页脚字号", "type": "number", "target": "cssVar", "name": "--xhs-footer-font-size", "unit": "px", "min": 14, "max": 32, "step": 1, "default": 24 },
+        { "label": "页码字号", "type": "number", "target": "cssVar", "name": "--xhs-page-no-size", "unit": "px", "min": 12, "max": 30, "step": 1, "default": 22 }
+      ]
+    },
+    {
+      "name": "H1 排版",
+      "controls": [
+        { "label": "栏目标签字号", "type": "number", "target": "cssVar", "name": "--xhs-eyebrow-size", "unit": "px", "min": 12, "max": 32, "step": 1, "default": 20 },
+        { "label": "栏目标签行高", "type": "number", "target": "cssVar", "name": "--xhs-eyebrow-line-height", "unit": "px", "min": 18, "max": 42, "step": 1, "default": 28 },
+        { "label": "H1 字号", "type": "number", "target": "cssVar", "name": "--xhs-h1-size", "unit": "px", "min": 42, "max": 86, "step": 1, "default": 68 },
+        { "label": "H1 行高", "type": "number", "target": "cssVar", "name": "--xhs-h1-line-height", "unit": "px", "min": 50, "max": 100, "step": 1, "default": 76 },
+        { "label": "H1 上留白", "type": "number", "target": "cssVar", "name": "--xhs-h1-padding-top", "unit": "px", "min": 0, "max": 160, "step": 2, "default": 80 },
+        { "label": "H1 下留白", "type": "number", "target": "cssVar", "name": "--xhs-h1-padding-bottom", "unit": "px", "min": 0, "max": 110, "step": 2, "default": 40 },
+        { "label": "标签标题间距", "type": "number", "target": "cssVar", "name": "--xhs-h1-gap", "unit": "px", "min": 0, "max": 60, "step": 1, "default": 24 },
+        { "label": "标题行间距", "type": "number", "target": "cssVar", "name": "--xhs-h1-title-gap", "unit": "px", "min": 0, "max": 24, "step": 1, "default": 2 }
+      ]
+    },
+    {
+      "name": "封面标题",
+      "controls": [
+        { "label": "标题区域宽度", "type": "number", "target": "cssVar", "name": "--xhs-cover-area-width", "unit": "px", "min": 420, "max": 760, "step": 2, "default": 660 },
+        { "label": "标题区域高度", "type": "number", "target": "cssVar", "name": "--xhs-cover-area-height", "unit": "px", "min": 280, "max": 760, "step": 2, "default": 640 },
+        { "label": "上外边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-margin-top", "unit": "px", "min": 0, "max": 180, "step": 2, "default": 70 },
+        { "label": "下外边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-margin-bottom", "unit": "px", "min": 0, "max": 140, "step": 2, "default": 44 },
+        { "label": "上内边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-padding-top", "unit": "px", "min": 0, "max": 120, "step": 2, "default": 0 },
+        { "label": "右内边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-padding-right", "unit": "px", "min": 0, "max": 120, "step": 2, "default": 0 },
+        { "label": "下内边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-padding-bottom", "unit": "px", "min": 0, "max": 120, "step": 2, "default": 0 },
+        { "label": "左内边距", "type": "number", "target": "cssVar", "name": "--xhs-cover-padding-left", "unit": "px", "min": 0, "max": 120, "step": 2, "default": 0 },
+        { "label": "标题字号", "type": "number", "target": "cssVar", "name": "--xhs-cover-title-size", "unit": "px", "min": 60, "max": 200, "step": 1, "default": 92 },
+        { "label": "标题行高", "type": "number", "target": "cssVar", "name": "--xhs-cover-title-line-height", "unit": "px", "min": 60, "max": 220, "step": 1, "default": 98 },
+        { "label": "标题行间距", "type": "number", "target": "cssVar", "name": "--xhs-cover-title-gap", "unit": "px", "min": 0, "max": 32, "step": 1, "default": 0 },
+        { "label": "封面黑字颜色", "type": "color", "target": "cssVar", "name": "--xhs-cover-title-ink", "default": "#151412" },
+        { "label": "封面强调颜色", "type": "color", "target": "cssVar", "name": "--xhs-cover-title-gold", "default": "#c88b05" }
+      ]
+    },
+    {
+      "name": "H2 / H3 排版",
+      "controls": [
+        { "label": "H2 字号", "type": "number", "target": "cssVar", "name": "--xhs-h2-size", "unit": "px", "min": 28, "max": 58, "step": 1, "default": 44 },
+        { "label": "H2 行高", "type": "number", "target": "cssVar", "name": "--xhs-h2-line-height", "unit": "px", "min": 36, "max": 76, "step": 1, "default": 58 },
+        { "label": "H2 上留白", "type": "number", "target": "cssVar", "name": "--xhs-h2-padding-top", "unit": "px", "min": 0, "max": 80, "step": 2, "default": 0 },
+        { "label": "H2 下留白", "type": "number", "target": "cssVar", "name": "--xhs-h2-padding-bottom", "unit": "px", "min": 0, "max": 80, "step": 2, "default": 15 },
+        { "label": "H2 线距", "type": "number", "target": "cssVar", "name": "--xhs-h2-rule-gap", "unit": "px", "min": 4, "max": 48, "step": 1, "default": 30 },
+        { "label": "H3 字号", "type": "number", "target": "cssVar", "name": "--xhs-h3-size", "unit": "px", "min": 22, "max": 44, "step": 1, "default": 32 },
+        { "label": "H3 行高", "type": "number", "target": "cssVar", "name": "--xhs-h3-line-height", "unit": "px", "min": 30, "max": 62, "step": 1, "default": 48 },
+        { "label": "H3 上留白", "type": "number", "target": "cssVar", "name": "--xhs-h3-padding-top", "unit": "px", "min": 0, "max": 80, "step": 2, "default": 0 },
+        { "label": "H3 下留白", "type": "number", "target": "cssVar", "name": "--xhs-h3-padding-bottom", "unit": "px", "min": 0, "max": 80, "step": 2, "default": 15 },
+        { "label": "H3 线距", "type": "number", "target": "cssVar", "name": "--xhs-h3-rule-gap", "unit": "px", "min": 4, "max": 48, "step": 1, "default": 30 },
+        { "label": "短线宽度", "type": "number", "target": "cssVar", "name": "--xhs-rule-width", "unit": "px", "min": 40, "max": 160, "step": 1, "default": 91 },
+        { "label": "短线高度", "type": "number", "target": "cssVar", "name": "--xhs-rule-height", "unit": "px", "min": 1, "max": 8, "step": 1, "default": 2 }
+      ]
+    },
+    {
+      "name": "正文 / 强调块",
+      "controls": [
+        { "label": "正文字号", "type": "number", "target": "cssVar", "name": "--xhs-paragraph-size", "unit": "px", "min": 20, "max": 36, "step": 1, "default": 27 },
+        { "label": "正文行高", "type": "number", "target": "cssVar", "name": "--xhs-paragraph-line-height", "unit": "px", "min": 36, "max": 76, "step": 1, "default": 60 },
+        { "label": "段落上留白", "type": "number", "target": "cssVar", "name": "--xhs-paragraph-padding-top", "unit": "px", "min": 0, "max": 50, "step": 1, "default": 0 },
+        { "label": "段落下留白", "type": "number", "target": "cssVar", "name": "--xhs-paragraph-padding-bottom", "unit": "px", "min": 0, "max": 50, "step": 1, "default": 0 },
+        { "label": "强调块上留白", "type": "number", "target": "cssVar", "name": "--xhs-strong-padding-top", "unit": "px", "min": 0, "max": 60, "step": 1, "default": 0 },
+        { "label": "强调块下留白", "type": "number", "target": "cssVar", "name": "--xhs-strong-padding-bottom", "unit": "px", "min": 0, "max": 60, "step": 1, "default": 0 }
+      ]
+    },
+    {
+      "name": "列表排版",
+      "controls": [
+        { "label": "列表字号", "type": "number", "target": "cssVar", "name": "--xhs-list-size", "unit": "px", "min": 20, "max": 36, "step": 1, "default": 27 },
+        { "label": "列表行高", "type": "number", "target": "cssVar", "name": "--xhs-list-line-height", "unit": "px", "min": 30, "max": 64, "step": 1, "default": 45 },
+        { "label": "列表上留白", "type": "number", "target": "cssVar", "name": "--xhs-list-gap-top", "unit": "px", "min": 0, "max": 70, "step": 2, "default": 0 },
+        { "label": "列表项间距", "type": "number", "target": "cssVar", "name": "--xhs-list-gap-bottom", "unit": "px", "min": 0, "max": 70, "step": 2, "default": 30 },
+        { "label": "列表内部行距", "type": "number", "target": "cssVar", "name": "--xhs-list-item-gap", "unit": "px", "min": 0, "max": 40, "step": 1, "default": 0 },
+        { "label": "列表行最小高度", "type": "number", "target": "cssVar", "name": "--xhs-list-row-min-height", "unit": "px", "min": 32, "max": 82, "step": 1, "default": 60 },
+        { "label": "标记文字间距", "type": "number", "target": "cssVar", "name": "--xhs-list-row-gap", "unit": "px", "min": 0, "max": 28, "step": 1, "default": 10 },
+        { "label": "列表行上下内距", "type": "number", "target": "cssVar", "name": "--xhs-list-row-padding-y", "unit": "px", "min": 0, "max": 28, "step": 1, "default": 0 },
+        { "label": "列表左右内距", "type": "number", "target": "cssVar", "name": "--xhs-list-row-padding-x", "unit": "px", "min": 0, "max": 32, "step": 1, "default": 5 },
+        { "label": "编号宽度", "type": "number", "target": "cssVar", "name": "--xhs-list-marker-width", "unit": "px", "min": 18, "max": 70, "step": 1, "default": 33 },
+        { "label": "圆点宽度", "type": "number", "target": "cssVar", "name": "--xhs-list-unordered-marker-width", "unit": "px", "min": 8, "max": 40, "step": 1, "default": 12 },
+        { "label": "列表文本宽度", "type": "number", "target": "cssVar", "name": "--xhs-list-text-width", "unit": "px", "min": 480, "max": 720, "step": 2, "default": 596 },
+        { "label": "列表标记颜色", "type": "color", "target": "cssVar", "name": "--xhs-list-marker-color", "default": "#c88b05" },
+        { "label": "列表文字颜色", "type": "color", "target": "cssVar", "name": "--xhs-list-text-color", "default": "#2a2824" }
+      ]
+    },
+    {
+      "name": "金句排版",
+      "controls": [
+        { "label": "金句字号", "type": "number", "target": "cssVar", "name": "--xhs-quote-size", "unit": "px", "min": 20, "max": 36, "step": 1, "default": 27 },
+        { "label": "金句行高", "type": "number", "target": "cssVar", "name": "--xhs-quote-line-height", "unit": "px", "min": 32, "max": 66, "step": 1, "default": 46 },
+        { "label": "金句上留白", "type": "number", "target": "cssVar", "name": "--xhs-quote-padding-top", "unit": "px", "min": 0, "max": 70, "step": 2, "default": 0 },
+        { "label": "金句下留白", "type": "number", "target": "cssVar", "name": "--xhs-quote-padding-bottom", "unit": "px", "min": 0, "max": 70, "step": 2, "default": 30 },
+        { "label": "金句框最小高度", "type": "number", "target": "cssVar", "name": "--xhs-quote-box-min-height", "unit": "px", "min": 36, "max": 100, "step": 1, "default": 60 },
+        { "label": "金句框上下内距", "type": "number", "target": "cssVar", "name": "--xhs-quote-box-padding-y", "unit": "px", "min": 0, "max": 32, "step": 1, "default": 7 },
+        { "label": "金句框左右内距", "type": "number", "target": "cssVar", "name": "--xhs-quote-box-padding-x", "unit": "px", "min": 0, "max": 60, "step": 1, "default": 23 }
+      ]
+    },
+    {
+      "name": "分页空间",
+      "controls": [
+        { "label": "分页可用高度", "type": "number", "target": "config", "path": "content.maxHeight", "min": 900, "max": 1120, "step": 2, "default": 1070 }
+      ]
+    }
+  ]
+}

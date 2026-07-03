@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Local runtime output
+exports/
+layout-overrides/
+preview-server.*.log
+*.log
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local user state
+templates/*/presets/current.json
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

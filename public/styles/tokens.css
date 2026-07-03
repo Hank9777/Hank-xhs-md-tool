@@ -1,0 +1,23 @@
+/* 小红书正文页设计 tokens：从 Figma 正文页样式沉淀，供预览和导出共用。 */
+:root {
+  --xhs-page-width: 900px;
+  --xhs-page-height: 1200px;
+  --xhs-paper: #fbfaf6;
+  --xhs-paper-warm: #f7f2e8;
+  --xhs-ink: #151412;
+  --xhs-text: #2a2824;
+  --xhs-muted: #5e5a52;
+  --xhs-line: #d8d4cb;
+  --xhs-line-strong: #bcb6aa;
+  --xhs-gold: #c88b05;
+  --xhs-gold-deep: #a46d00;
+  --xhs-font-serif: "Noto Serif SC", "Source Han Serif SC", "SimSun", "Songti SC", serif;
+  --xhs-font-sans: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --xhs-content-left: 76px;
+  --xhs-content-top: 26px;
+  --xhs-content-width: 748px;
+  --xhs-content-height: 1070px;
+  --xhs-footer-top: 1096px;
+  --xhs-footer-height: 78px;
+  --xhs-border-size: 848px;
+}

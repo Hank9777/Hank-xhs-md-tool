@@ -1,0 +1,42 @@
+{
+  "id": "default",
+  "name": "默认样式",
+  "description": "Deep Reading 模板的默认正文高密度样式。",
+  "variables": {
+    "--xhs-border-height": "1150px",
+    "--xhs-h1-padding-bottom": "58px",
+    "--xhs-h2-padding-top": "42px",
+    "--xhs-h2-padding-bottom": "22px",
+    "--xhs-paragraph-padding-top": "0px",
+    "--xhs-list-line-height": "44px",
+    "--xhs-list-row-gap": "9px",
+    "--xhs-content-top": "72px",
+    "--xhs-footer-padding-bottom": "30px",
+    "--xhs-footer-height": "50px",
+    "--xhs-footer-top": "1106px",
+    "--xhs-content-height": "1028px",
+    "--xhs-content-width": "748px",
+    "--xhs-list-gap-bottom": "0px",
+    "--xhs-list-gap-top": "0px",
+    "--xhs-cover-title-size": "123px",
+    "--xhs-cover-title-gap": "27px",
+    "--xhs-cover-padding-bottom": "0px",
+    "--xhs-cover-margin-bottom": "6px",
+    "--xhs-cover-margin-top": "28px",
+    "--xhs-h1-padding-top": "36px",
+    "--xhs-paragraph-size": "25px",
+    "--xhs-quote-padding-top": "26px",
+    "--xhs-quote-line-height": "47px",
+    "--xhs-cover-area-height": "628px",
+    "--xhs-quote-size": "25px",
+    "--xhs-list-size": "25px",
+    "--xhs-cover-title-line-height": "116px",
+    "--xhs-cover-padding-top": "50px",
+    "--xhs-footer-font-size": "23px"
+  },
+  "config": {
+    "content": {
+      "maxHeight": 1028
+    }
+  }
+}

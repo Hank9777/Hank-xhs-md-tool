@@ -1,0 +1,34 @@
+{
+  "id": "deep-reading",
+  "name": "Deep Reading 高密度正文",
+  "description": "米白纸张、黑金中文宋体、高密度正文页模板。",
+  "default": true,
+  "page": {
+    "width": 900,
+    "height": 1200
+  },
+  "content": {
+    "left": 76,
+    "top": 26,
+    "width": 748,
+    "maxHeight": 1070
+  },
+  "pagination": {
+    "atomicBlocks": ["coverTitle", "h1", "h2", "h3", "quote", "strongBlock"],
+    "splittableBlocks": ["paragraph", "ul", "ol"],
+    "avoidOrphanHeadings": true,
+    "forceBreakType": "pageBreak"
+  },
+  "supportedBlocks": [
+    "coverTitle",
+    "h1",
+    "h2",
+    "h3",
+    "paragraph",
+    "strongBlock",
+    "quote",
+    "ul",
+    "ol",
+    "pageBreak"
+  ]
+}

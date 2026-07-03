@@ -1,0 +1,115 @@
+<!-- 小红书 Markdown 排版工具主界面：选择 Markdown、预览分页、导出 PNG。 -->
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小红书 MD 排版工具</title>
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <header class="app-header">
+        <p class="eyebrow-label">XHS Markdown Layout</p>
+        <h1>小红书 MD 排版工具</h1>
+      </header>
+
+      <section class="panel">
+        <label class="field-label" for="currentFileInput">当前文件</label>
+        <div class="draft-row">
+          <input id="currentFileInput" type="text" value="未选择 Markdown 文件" readonly>
+          <button id="refreshDraftButton" type="button">刷新文档</button>
+        </div>
+        <div class="local-file-row">
+          <button id="localMdButton" type="button">选择本地 MD 文件</button>
+          <input id="localMdInput" class="hidden-file-input" type="file" accept=".md,text/markdown,text/plain">
+        </div>
+      </section>
+
+      <section class="panel">
+        <label class="field-label" for="templateSelect">样式模板</label>
+        <select id="templateSelect"></select>
+      </section>
+
+      <section class="panel preset-panel template-editor-panel global-editor-panel">
+        <label class="field-label" for="presetSelect">样式预设</label>
+        <select id="presetSelect"></select>
+        <div class="preset-actions editor-actions">
+          <button id="saveTemplateButton" type="button">保存当前样式</button>
+          <button id="savePresetAsButton" type="button">另存为样式</button>
+        </div>
+        <div id="globalStyleEditor" class="template-editor global-style-editor"></div>
+      </section>
+
+      <section class="panel controls-grid">
+        <label class="field-label" for="accountInput">页脚账号</label>
+        <input id="accountInput" type="text" value="AUTHOR">
+
+        <label class="field-label" for="eyebrowInput">栏目标签</label>
+        <input id="eyebrowInput" type="text" value="NOTES">
+      </section>
+
+      <section class="panel template-editor-panel element-editor-panel">
+        <label class="field-label" for="elementSelect">元素编辑</label>
+        <select id="elementSelect"></select>
+        <div id="templateEditor" class="template-editor element-editor"></div>
+        <div class="editor-actions">
+          <button id="resetTemplateButton" type="button">恢复默认值</button>
+        </div>
+        <p id="editorStatusText" class="editor-status-text">未保存的调整会用于本次预览和导出，点击“保存当前样式”后会写入所选预设。</p>
+      </section>
+
+      <section class="panel template-editor-panel element-editor-panel cover-title-editor-panel">
+        <label class="field-label">封面标题编辑</label>
+        <div class="template-editor cover-title-editor">
+          <details id="coverEditorDetails" class="editor-group">
+            <summary class="editor-group-title">标题内容</summary>
+            <div class="editor-group-body">
+              <label class="text-element-control">
+                <span class="property-label">强调文字</span>
+                <input id="coverHighlightInput" type="text" placeholder="例如：学了 100 个、案例">
+              </label>
+              <div id="coverLinesEditor" class="cover-lines-editor"></div>
+            </div>
+          </details>
+          <div id="coverStyleEditor" class="cover-style-editor"></div>
+        </div>
+        <div class="editor-actions cover-actions">
+          <button id="saveCoverLayoutButton" type="button">保存本篇封面排版</button>
+        </div>
+      </section>
+
+      <textarea id="markdownInput" class="source-cache" spellcheck="false" aria-hidden="true"></textarea>
+
+      <section class="actions">
+        <button id="exportButton" type="button">导出 PNG</button>
+        <div id="exportHistory" class="export-history"></div>
+      </section>
+
+      <p id="statusText" class="status-text">等待选择 Markdown 文档。</p>
+    </aside>
+
+    <section class="preview-area">
+      <div class="preview-toolbar">
+        <span id="pageCountText">0 页</span>
+        <label class="preview-zoom-control" for="previewZoomInput">
+          <svg class="zoom-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6"></circle>
+            <path d="m16 16 4 4"></path>
+          </svg>
+          <input id="previewZoomInput" type="range" min="40" max="150" step="5" value="100" aria-label="预览缩放">
+          <strong id="previewZoomText">100%</strong>
+        </label>
+        <span>900 x 1200</span>
+      </div>
+      <div id="measureRoot" class="measure-root" aria-hidden="true"></div>
+      <div id="previewRoot" class="preview-root"></div>
+    </section>
+  </main>
+
+  <script src="./markdown-parser.js"></script>
+  <script src="./paginator.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "xhs-md-layout-tool",
+  "version": "0.1.0",
+  "private": false,
+  "description": "把 Markdown 自动排版成小红书 3:4 HTML 页面并导出 PNG。",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "playwright": "^1.45.0"
+  }
+}
