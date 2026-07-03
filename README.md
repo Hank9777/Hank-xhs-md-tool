@@ -193,35 +193,6 @@ templates/my-template/
 
 如果只是改变视觉风格，通常只需要新增模板目录。若要新增全新的语义组件，比如图片网格、数据图表、双栏排版，可能需要扩展 `renderer.js` 或 Markdown 解析逻辑。
 
-## 运行时文件
-
-这些内容属于本地运行数据，不建议提交到公共仓库：
-
-- `node_modules/`
-- `exports/`
-- `layout-overrides/`
-- `preview-server.*.log`
-- `.env`
-- `templates/*/presets/current.json`
-
-项目已经在 `.gitignore` 中排除了它们。
-
-## 发布到 GitHub 前检查
-
-建议在项目目录运行：
-
-```bash
-git status --short
-```
-
-确认没有误加入：
-
-- 个人文章内容。
-- 本地输出图片。
-- 单篇排版覆盖文件。
-- 真实账号信息。
-- `.env` 配置。
-- 日志文件。
 
 ## 常见问题
 
